@@ -1,5 +1,7 @@
 //
+//  Helpful Resources:
 //  https://github.com/shakyShane/jekyll-gulp-sass-browser-sync
+//  http://blog.webbb.be/use-jekyll-with-gulp/
 //
 //
 //  Required Plugins
