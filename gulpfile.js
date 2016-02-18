@@ -43,7 +43,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 //
 //  SASS Compile
 gulp.task('sass', function() {
-    gulp.src('app/sass/**/*.scss')
+    gulp.src('app/_sass/**/*.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
@@ -60,7 +60,7 @@ gulp.task('sass', function() {
 //
 //  Watch
 gulp.task('watch', function () {
-    gulp.watch('app/sass/**/*.scss', ['sass']);
+    gulp.watch('app/_sass/**/*.scss', ['sass']);
     gulp.watch(['app/*.html', 'app/js/*.js', 'app/_layouts/*.html', 'app/_posts/*', 'app/_includes/*.html', 'app/_includes/*.css'], ['jekyll-rebuild']);
 });
 
