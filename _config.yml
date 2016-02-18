@@ -23,11 +23,11 @@ source: app
 destination: _site
 
 #   Highlighter
-highlighter: pygments
+highlighter: rouge
 
 #   Markdown
 markdown: kramdown
 
 #   Url
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://albertosilva.me/" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
