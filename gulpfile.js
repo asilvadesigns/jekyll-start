@@ -21,8 +21,7 @@ var messages     = {
 //  Jekyll Build
 gulp.task('jekyll-build', function(done) {
     browserSync.notify(messages.jekyllBuild);
-    return childProcess.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
-        .on('close', done);
+    return childProcess.spawn('jekyll.bat', [ 'build', '--source=' + 'app', '--destination=' + '_site', '--config=' + '_config.yml', '--profile' ], {stdio: 'inherit'}).on('close', done);
 });
 
 //

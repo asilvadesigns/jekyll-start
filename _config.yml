@@ -16,18 +16,6 @@ github_username: jekyll
 #
 #   General Build Settings
 #
-#   Source
-source: app
-
-#   Destination
-destination: _site
-
-#   Highlighter
-highlighter: rouge
-
-#   Markdown
-markdown: kramdown
-
 #   Url
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
