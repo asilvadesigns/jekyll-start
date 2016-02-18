@@ -1,0 +1,5 @@
+*.css.map
+*.swp
+.jekyll-metadata
+.sass-cache
+node_modules/

@@ -1,0 +1,32 @@
+{
+  "name": "albertosilvaportfolio",
+  "version": "1.0.0",
+  "description": "Alberto Silva Online Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilvadesigns/portfolio.git"
+  },
+  "keywords": [
+    "Alberto",
+    "Silva",
+    "Portfolio"
+  ],
+  "author": "Alberto Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asilvadesigns/portfolio/issues"
+  },
+  "homepage": "https://github.com/asilvadesigns/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0"
+  }
+}

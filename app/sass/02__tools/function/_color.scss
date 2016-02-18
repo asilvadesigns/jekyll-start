@@ -1,0 +1,9 @@
+@function shade($input, $percentage) {
+    $output: mix(black, $input, $percentage);
+    @return $output;
+}
+
+@function tint($input, $percentage) {
+    $output: mix(white, $input, $percentage);
+    @return $output;
+}

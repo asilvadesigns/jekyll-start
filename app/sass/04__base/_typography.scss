@@ -1,0 +1,32 @@
+//  @include ff-batch($fira);
+@include ff-batch($sans);
+
+html {
+    font-size: ( $global__font-size / 16 ) * 100%;
+}
+body {
+    font-family: 'WorkSans', sans-serif;
+    font-weight: 500;
+    line-height: $global__line-height;
+}
+h1 {
+    font-size: $h1__font-size;
+}
+h2 {
+    font-size: $h2__font-size;
+}
+h3 {
+    font-size: $h3__font-size;
+}
+h4 {
+    font-size: $h4__font-size;
+}
+h5 {
+    font-size: $h5__font-size;
+}
+h6 {
+    font-size: $h6__font-size;
+}
+p, ul, ol {
+    margin-bottom: rhythm(1);
+}

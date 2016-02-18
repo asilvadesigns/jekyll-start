@@ -1,0 +1,24 @@
+//  Link, Visited, Hover, Active
+@mixin visited-state {
+    &:visited {
+        @content;
+    }
+}
+
+@mixin hover-state {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin focus-state {
+    &:focus {
+        @content;
+    }
+}
+
+@mixin active-state {
+    &:active {
+        @content;
+    }
+}

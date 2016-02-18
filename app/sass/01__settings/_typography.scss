@@ -1,0 +1,79 @@
+//
+//  Typography
+$global__font-size:      18;
+$global__font-ratio:     1.333;
+$global__font-unit:      1em;
+$global__line-height:    1.5;
+//
+//  Rhythm
+$h5__font-size:         $global__font-unit;
+$h6__font-size:         $h5__font-size / $global__font-ratio;
+$h4__font-size:         $h5__font-size * $global__font-ratio;
+$h3__font-size:         $h4__font-size * $global__font-ratio;
+$h2__font-size:         $h3__font-size * $global__font-ratio;
+$h1__font-size:         $h2__font-size * $global__font-ratio;
+//
+//  Fonts
+$icon: (
+    "outlined-iconset": (
+        (
+            "name": "outlined-iconset",
+            "formats": ("eot", "woff", "ttf", "svg"),
+            "weight": "500"
+        ),
+    )
+);
+
+$sans: (
+    "WorkSans": (
+        (
+            "name": "WorkSans-Thin",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "100"
+        ), (
+            "name": "WorkSans-ExtraLight",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "200"
+        ), (
+            "name": "WorkSans-Light",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "300"
+        ), (
+            "name": "WorkSans-Regular",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "400"
+        ), (
+            "name": "WorkSans-Medium",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "500"
+        ), (
+            "name": "WorkSans-SemiBold",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "600"
+        ), (
+            "name": "WorkSans-Bold",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "700"
+        ), (
+            "name": "WorkSans-ExtraBold",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "800"
+        ), (
+            "name": "WorkSans-Black",
+            "formats": ("woff2", "woff", "ttf"),
+            "weight": "900"
+        ),
+    )
+);
+//
+//  Ratios based on classical scale
+//
+//  1.067      Minor Second
+//  1.125      Major Second
+//  1.200      Minor Third
+//  1.250      Major Third
+//  1.333      Perfect Fourth
+//  1.414      Augmented Fourth
+//  1.500      Perfect Fifth
+//  1.618      Golden Ratio
+
