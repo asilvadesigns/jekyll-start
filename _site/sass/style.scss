@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+//
+//  Settings
+//  Global variables, config switches.
+@import
+    '01__settings/breakpoints',
+    '01__settings/colors',
+    '01__settings/paths',
+    '01__settings/typography',
+    '01__settings/units';
+
+//
+//  Tools
+//  Default mixins and functions.
+@import
+    '02__tools/function/color',
+    '02__tools/function/math',
+    '02__tools/function/rhythm',
+    '02__tools/mixin/clearfix',
+    '02__tools/mixin/fontface',
+    '02__tools/mixin/state';
+
+//
+//  Generic
+//  Ground-zero styles (Normalize.css, resets, box-sizing).
+@import
+    '03__generic/reset';
+
+//
+//  Base
+//  Unclassed HTML elements (type selectors).
+@import
+    '04__base/outlined-iconset',
+    '04__base/syntax',
+    '04__base/typography';
+
+//
+//  Objects
+//  Cosmetic-free design patterns.
+//  @import
+//      '05__objects/...',
+
+//
+//  Components
+//  Designed components, chunks of UI.
+//  @import
+//      '06__components/...';
+
+//
+//  Trumps
+//  Helpers and overrides.
+//  @import
+//      '07__trumps/...';
+
+//
+//  Shame
+//  Yup.
+//  @import
+//      '08__shame/...';
