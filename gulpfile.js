@@ -23,7 +23,8 @@ var messages     = {
 //  Jekyll Build
 gulp.task('jekyll-build', function(done) {
     browserSync.notify(messages.jekyllBuild);
-    return childProcess.spawn('jekyll.bat', [ 'build', '--source=' + 'app', '--destination=' + '_site', '--config=' + '_config.yml', '--profile' ], {stdio: 'inherit'}).on('close', done);
+    return childProcess.spawn('jekyll.bat', [ 'build', ], {stdio: 'inherit'})
+        .on('close', done);
 });
 
 //
@@ -44,7 +45,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 //
 //  SASS Compile
 gulp.task('sass', function() {
-    gulp.src('app/_sass/**/*.scss')
+    gulp.src('./_sass/**/*.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
@@ -52,7 +53,7 @@ gulp.task('sass', function() {
             cascade:   false
         }))
         .pipe(cssnano())
-        .pipe(gulp.dest('app/_includes'))
+        .pipe(gulp.dest('./_includes'))
         .pipe(browserSync.reload({
             stream: true
         }));
@@ -61,8 +62,8 @@ gulp.task('sass', function() {
 //
 //  Watch
 gulp.task('watch', function () {
-    gulp.watch('app/_sass/**/*.scss', ['sass']);
-    gulp.watch(['app/*.html', 'app/js/*.js', 'app/_layouts/*.html', 'app/_posts/*', 'app/_includes/*.html', 'app/_includes/*.css'], ['jekyll-rebuild']);
+    gulp.watch('./_sass/**/*.scss', ['sass']);
+    gulp.watch(['./*.html', './js/*.js', './_layouts/*.html', './_posts/*', './_includes/*.html', './_includes/*.css'], ['jekyll-rebuild']);
 });
 
 //
