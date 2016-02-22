@@ -1,5 +1,6 @@
 //
 //  Paths
-$global__font-path:      "../fonts/";
-$global__image-path:     "../images/";
+$root:                   ".";
+$global__font-path:      $root + "/fonts/";
+$global__image-path:     $root + "/images/";
 
