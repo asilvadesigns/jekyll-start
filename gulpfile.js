@@ -52,7 +52,7 @@ gulp.task('sass', function() {
             browsers:  ['last 2 versions'],
             cascade:   false
         }))
-        .pipe(cssnano())
+        //  .pipe(cssnano())
         .pipe(gulp.dest('./_includes'))
         .pipe(browserSync.reload({
             stream: true

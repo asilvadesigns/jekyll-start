@@ -24,6 +24,20 @@ $icon: (
     )
 );
 
+$mono: (
+    "SourceCodePro": (
+        (
+            "name": "SourceCodePro-Regular",
+            "formats": ("eot", "woff2", "woff", "ttf", "svg"),
+            "weight": "400"
+        ), (
+            "name": "SourceCodePro-Medium",
+            "formats": ("eot", "woff", "ttf", "svg"),
+            "weight": "500"
+        ),
+    )
+);
+
 $sans: (
     "WorkSans": (
         (
