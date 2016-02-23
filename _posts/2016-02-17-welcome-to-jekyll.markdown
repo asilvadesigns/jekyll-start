@@ -20,7 +20,7 @@ print_hi('Tom')
 
 {% highlight css %}
 .nav {
-    background-color: blue;
+    background-color: dodgerblue;
     color: white;
     @include clearfix;
 }
