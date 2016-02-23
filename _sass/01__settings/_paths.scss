@@ -1,6 +1,8 @@
 //
 //  Paths
-$root:                   "/";
-$global__font-path:      $root + "fonts/";
-$global__image-path:     $root + "images/";
+$remote:                 "/jekyll-start/";
+$local:                  "/";
+//
+$global__font-path:      $remote + "fonts/";
+$global__image-path:     $remote + "images/";
 

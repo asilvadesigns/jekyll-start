@@ -17,7 +17,7 @@ github_username: jekyll
 #   General Build Settings
 #
 #   Url
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-start" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 exclude:
