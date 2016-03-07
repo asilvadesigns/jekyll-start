@@ -1,10 +1,12 @@
 //
 //  Units
-$nav__x:  rhythm(1);
-$nav__y:  rhythm(.5);
+$nav__x: rhythm(1);
+$nav__y: rhythm(0.5);
 //
 //  Base
 .nav {
+    font-family: 'WorkSans', sans-serif;
+
     margin-bottom: $nav__y * 6;
 }
 
@@ -18,9 +20,10 @@ $nav__y:  rhythm(.5);
 
 .nav__item {
     display: inline-block;
+
     padding: $nav__y 0;
 }
 
 .nav__item--active {
-    opacity: .5;
+    opacity: 0.5;
 }
