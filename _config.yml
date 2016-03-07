@@ -17,8 +17,8 @@ github_username: jekyll
 #   General Build Settings
 #
 #   Url
-#baseurl: "/jekyll-start"   # remote
-baseurl: ""                 # local
+baseurl: "/jekyll-start"   # remote
+#baseurl: ""                 # local
 url: ""                     # the base hostname & protocol for your site
 permalink: pretty
 
