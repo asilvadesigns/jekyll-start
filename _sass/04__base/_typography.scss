@@ -1,4 +1,8 @@
 //
+//  Var
+$body__color:  $neutral__color;
+$link__color:  $primary__color;
+//
 //  Fonts
 @include ff-batch($sans);
 @include ff-batch($serif);
@@ -9,7 +13,8 @@ html {
     font-size: ( $global__font-size / 16 ) * 100%;
 }
 body {
-    font-family: 'WorkSans', sans-serif;
+    color: $body__color;
+    font-family: 'Merriweather', serif;
     font-weight: 500;
     line-height: $global__line-height;
 }
@@ -19,8 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
+    font-family: 'WorkSans', sans-serif;
     font-size: $h4__font-size;
 }
 .h1 {
@@ -43,4 +47,7 @@ h6 {
 }
 p, ul, ol {
     margin-bottom: rhythm(1);
+}
+a {
+    color: $link__color;
 }

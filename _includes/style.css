@@ -212,7 +212,7 @@ table {
   border-spacing: 0; }
 
 a {
-  color: inherit; }
+  text-decoration: none; }
 
 .highlight {
   font-family: 'SourceCodePro', monospace;
@@ -444,9 +444,10 @@ html {
   font-size: 125%; }
 
 body {
-  font-family: 'WorkSans', sans-serif;
+  color: #34495e;
+  font-family: 'Merriweather', serif;
   font-weight: 500;
-  line-height: 1.5; }
+  line-height: 1.618; }
 
 h1,
 h2,
@@ -454,8 +455,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
+  font-family: 'WorkSans', sans-serif;
   font-size: 1.333em; }
 
 .h1 {
@@ -477,16 +477,19 @@ h6 {
   font-size: 0.75019em; }
 
 p, ul, ol {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.618em; }
+
+a {
+  color: #3498db; }
 
 .wrapper {
   box-sizing: border-box;
-  max-width: 30em;
+  max-width: 38em;
   margin: 0 auto;
-  padding: 0 1.5em; }
+  padding: 0 1.618em; }
 
 .nav {
-  margin-bottom: 4.5em; }
+  margin-bottom: 4.854em; }
 
 .nav__group:after {
   display: table;
@@ -498,7 +501,7 @@ p, ul, ol {
 
 .nav__item {
   display: inline-block;
-  padding: 0.75em 0; }
+  padding: 0.809em 0; }
 
 .nav__item--active {
   opacity: .5; }
@@ -511,3 +514,9 @@ p, ul, ol {
 
 .float--none {
   float: none; }
+
+.one-third {
+  width: 33.33333%; }
+
+.two-thirds {
+  width: 66.66667%; }

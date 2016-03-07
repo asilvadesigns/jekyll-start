@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<h3>Home</h3>
-
-
+<h3>Recent Posts</h3>
 <ul>
     {% for post in site.posts %}
     <li>
@@ -14,6 +12,7 @@ layout: default
 </ul>
 
 
+<h3>Recent Projects</h3>
 <ul>
     {% assign projects = site.projects | where: "featured", "true" | sort: "featured-priority" %}
     {% for project in projects %}
