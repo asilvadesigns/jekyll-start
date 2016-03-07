@@ -17,3 +17,13 @@
     $output: $input * .75;
     @return $output;
 }
+
+@function double($input) {
+    $output: $input * 2;
+    @return $output;
+}
+
+@function negative($input) {
+    $output: $input * -1;
+    @return $output;
+}

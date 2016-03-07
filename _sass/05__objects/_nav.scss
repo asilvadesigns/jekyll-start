@@ -1,0 +1,26 @@
+//
+//  Units
+$nav__x:  rhythm(1);
+$nav__y:  rhythm(.5);
+//
+//  Base
+.nav {
+    margin-bottom: $nav__y * 6;
+}
+
+.nav__group {
+    @include clearfix;
+}
+
+.nav__group--right {
+    float: right;
+}
+
+.nav__item {
+    display: inline-block;
+    padding: $nav__y 0;
+}
+
+.nav__item--active {
+    opacity: .5;
+}

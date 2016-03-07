@@ -1,9 +1,9 @@
 #
 #   General Site Settigns
 #
-author: Author
+author: Alberto Silva
 title: Your awesome title
-email: author@domain.com
+email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -17,10 +17,8 @@ github_username: jekyll
 #   General Build Settings
 #
 #   Url
-#baseurl: "/jekyll-start"   # remote
-baseurl: ""                 # local
-url: ""                     # the base hostname & protocol for your site
-permalink: pretty
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
 exclude:
     - LICENSE
@@ -28,13 +26,3 @@ exclude:
     - gulpfile.js
     - node_modules
     - package.json
-
-collections:
-    projects:
-        output: true
-
-defaults:
-    - scope:
-        type: projects
-      values:
-        layout: project

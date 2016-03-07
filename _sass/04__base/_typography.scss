@@ -1,5 +1,10 @@
+//
+//  Fonts
 @include ff-batch($sans);
+@include ff-batch($serif);
 @include ff-batch($mono);
+//
+//  Base
 html {
     font-size: ( $global__font-size / 16 ) * 100%;
 }
@@ -14,6 +19,8 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
     font-size: $h4__font-size;
 }
 .h1 {

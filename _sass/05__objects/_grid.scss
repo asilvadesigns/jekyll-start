@@ -1,0 +1,13 @@
+//
+//  Units
+$grid__x: rhythm(1);
+$grid__y: rhythm(0.5);
+$grid__gutter: $grid__x;
+//
+//  Base
+.wrapper {
+    box-sizing: border-box;
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 0 $grid__gutter;
+}

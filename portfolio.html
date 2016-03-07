@@ -1,12 +1,9 @@
 ---
-layout: default
+layout: page
+title: Portfolio
+permalink: /portfolio/
+navgroup: "main"
 ---
-<h3>Home</h3>
-
-{% for post in site.posts %}
-<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-{% endfor %}
-
 {% assign projects = site.projects %}
 {% for project in projects %}
 <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>

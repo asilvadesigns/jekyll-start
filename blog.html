@@ -1,0 +1,10 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+navgroup: "main"
+---
+
+{% for post in site.posts %}
+<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+{% endfor %}

@@ -1,13 +1,15 @@
 <header>
 
-    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <nav class="nav">
 
-    <nav>
-        {% for page in site.pages %}
-        {% if page.title %}
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
+        <a class="nav__item" href="{{ site.baseurl }}/">{{ site.author }}</a>
+
+        <div class="nav__group nav__group--right">
+            {% assign pagelist = site.pages %}
+            {% assign navgroup = 'main' %}
+            {% include nav.html %}
+        </div>
+
     </nav>
 
 </header>

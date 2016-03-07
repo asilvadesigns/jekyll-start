@@ -1,6 +1,6 @@
 //
 //  Typography
-$global__font-size:      18;
+$global__font-size:      20;
 $global__font-ratio:     1.333;
 $global__font-unit:      1em;
 $global__line-height:    1.5;
@@ -34,6 +34,48 @@ $mono: (
             "name": "SourceCodePro-Medium",
             "formats": ("eot", "woff", "ttf", "svg"),
             "weight": "500"
+        ),
+    )
+);
+
+$serif: (
+    "Merriweather": (
+        (
+            "name": "Merriweather-Light",
+            "formats": ("ttf"),
+            "weight": "300"
+        ), (
+            "name": "Merriweather-LightItalic",
+            "formats": ("ttf"),
+            "weight": "300",
+            "style": "italic"
+        ), (
+            "name": "Merriweather-Regular",
+            "formats": ("ttf"),
+            "weight": "400"
+        ), (
+            "name": "Merriweather-Italic",
+            "formats": ("ttf"),
+            "weight": "400",
+            "style": "italic"
+        ), (
+            "name": "Merriweather-Bold",
+            "formats": ("ttf"),
+            "weight": "700"
+        ), (
+            "name": "Merriweather-BoldItalic",
+            "formats": ("ttf"),
+            "weight": "700",
+            "style": "italic"
+        ), (
+            "name": "Merriweather-Black",
+            "formats": ("ttf"),
+            "weight": "900",
+        ), (
+            "name": "Merriweather-HeavyItalic",
+            "formats": ("ttf"),
+            "weight": "900",
+            "style": "italic"
         ),
     )
 );
