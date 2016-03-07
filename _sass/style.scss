@@ -24,6 +24,7 @@
 //  Generic
 //  Ground-zero styles (Normalize.css, resets, box-sizing).
 @import
+    '03__generic/normalize',
     '03__generic/reset';
 
 //
@@ -49,8 +50,8 @@
 //
 //  Trumps
 //  Helpers and overrides.
-//  @import
-//      '07__trumps/...';
+@import
+    '07__trumps/utilities';
 
 //
 //  Shame

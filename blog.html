@@ -4,7 +4,11 @@ title: Blog
 permalink: /blog/
 navgroup: "main"
 ---
-
-{% for post in site.posts %}
-<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-{% endfor %}
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <time class="float--right" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time>
+    </li>
+    {% endfor %}
+</ul>

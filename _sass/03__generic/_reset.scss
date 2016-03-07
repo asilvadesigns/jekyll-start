@@ -48,10 +48,5 @@ table {
 //  My Additions
 //
 a {
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        cursor: pointer;
-    }
+    color: inherit;
 }

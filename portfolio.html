@@ -4,7 +4,11 @@ title: Portfolio
 permalink: /portfolio/
 navgroup: "main"
 ---
-{% assign projects = site.projects %}
-{% for project in projects %}
-<a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-{% endfor %}
+<ul>
+    {% assign projects = site.projects | sort: "listing-priority" %}
+    {% for project in projects %}
+    <li>
+        <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
