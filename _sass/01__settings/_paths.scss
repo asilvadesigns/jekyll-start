@@ -4,7 +4,7 @@ $remote:                 "/jekyll-start/";  //  repo or site name. If using jeky
 $local:                  "/";
 //
 //  Base
-$root:                   $local;
+$root:                   $remote;
 //
 //  Paths
 $global__font-path:      $root + "fonts/";
