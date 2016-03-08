@@ -17,11 +17,12 @@ github_username: jekyll
 #   General Build Settings
 #
 #   Url
-baseurl: "/jekyll-start"   # remote
-#baseurl: ""                 # local
+baseurl: "/jekyll-start"    # remote
+#baseurl: ""                # local
 url: ""                     # the base hostname & protocol for your site
 permalink: pretty
 
+#   Exclue files and directories
 exclude:
     - LICENSE
     - README.md
@@ -29,10 +30,12 @@ exclude:
     - node_modules
     - package.json
 
+#   Output specified collections
 collections:
     projects:
         output: true
 
+#   Set collection default layout
 defaults:
     - scope:
         type: projects
