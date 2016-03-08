@@ -5,10 +5,10 @@ permalink: /portfolio/
 navgroup: "main"
 ---
 <ul>
-    {% assign projects = site.projects | sort: "listing-priority" %}
+    {% assign projects = site.projects | sort: 'listing-priority' %}
     {% for project in projects %}
     <li>
-        <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+        <a href="{{ project.url | prepend: site.baseurl }}">{{ project.project-title }}</a>
     </li>
     {% endfor %}
 </ul>
