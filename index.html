@@ -14,7 +14,7 @@ layout: default
 
 <h3>Recent Projects</h3>
 <ul>
-    {% assign projects = site.projects | where: "featured", "true" | sort: "featured-priority" %}
+    {% assign projects = site.projects | sort: 'listing-priority' %}
     {% for project in projects %}
     <li>
         <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
