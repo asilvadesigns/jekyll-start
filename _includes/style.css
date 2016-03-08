@@ -258,115 +258,115 @@ a {
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Thin.woff2") format("woff2"), url("/fonts/WorkSans-Thin.woff") format("woff"), url("/fonts/WorkSans-Thin.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-Thin.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-Thin.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-ExtraLight.woff2") format("woff2"), url("/fonts/WorkSans-ExtraLight.woff") format("woff"), url("/fonts/WorkSans-ExtraLight.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-ExtraLight.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-ExtraLight.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Light.woff2") format("woff2"), url("/fonts/WorkSans-Light.woff") format("woff"), url("/fonts/WorkSans-Light.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-Light.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-Light.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Regular.woff2") format("woff2"), url("/fonts/WorkSans-Regular.woff") format("woff"), url("/fonts/WorkSans-Regular.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-Regular.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-Regular.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Medium.woff2") format("woff2"), url("/fonts/WorkSans-Medium.woff") format("woff"), url("/fonts/WorkSans-Medium.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-Medium.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-Medium.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-SemiBold.woff2") format("woff2"), url("/fonts/WorkSans-SemiBold.woff") format("woff"), url("/fonts/WorkSans-SemiBold.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-SemiBold.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-SemiBold.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Bold.woff2") format("woff2"), url("/fonts/WorkSans-Bold.woff") format("woff"), url("/fonts/WorkSans-Bold.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-Bold.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-Bold.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-ExtraBold.woff2") format("woff2"), url("/fonts/WorkSans-ExtraBold.woff") format("woff"), url("/fonts/WorkSans-ExtraBold.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-ExtraBold.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-ExtraBold.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: "WorkSans";
-  src: url("/fonts/WorkSans-Black.woff2") format("woff2"), url("/fonts/WorkSans-Black.woff") format("woff"), url("/fonts/WorkSans-Black.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/WorkSans-Black.woff2") format("woff2"), url("{{ site.baseurl }}fonts/WorkSans-Black.woff") format("woff"), url("{{ site.baseurl }}fonts/WorkSans-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Light.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-LightItalic.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Regular.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Italic.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Bold.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-BoldItalic.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-Black.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather";
-  src: url("/fonts/Merriweather-HeavyItalic.ttf") format("truetype");
+  src: url("{{ site.baseurl }}fonts/Merriweather-HeavyItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic; }
 
 @font-face {
   font-family: "SourceCodePro";
-  src: url("/fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/SourceCodePro-Regular.woff2") format("woff2"), url("/fonts/SourceCodePro-Regular.woff") format("woff"), url("/fonts/SourceCodePro-Regular.ttf") format("truetype"), url("/fonts/SourceCodePro-Regular.svg#svgSourceCodePro-Regular") format("svg");
+  src: url("{{ site.baseurl }}fonts/SourceCodePro-Regular.eot?#iefix") format("embedded-opentype"), url("{{ site.baseurl }}fonts/SourceCodePro-Regular.woff2") format("woff2"), url("{{ site.baseurl }}fonts/SourceCodePro-Regular.woff") format("woff"), url("{{ site.baseurl }}fonts/SourceCodePro-Regular.ttf") format("truetype"), url("{{ site.baseurl }}fonts/SourceCodePro-Regular.svg#svgSourceCodePro-Regular") format("svg");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "SourceCodePro";
-  src: url("/fonts/SourceCodePro-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/SourceCodePro-Medium.woff") format("woff"), url("/fonts/SourceCodePro-Medium.ttf") format("truetype"), url("/fonts/SourceCodePro-Medium.svg#svgSourceCodePro-Medium") format("svg");
+  src: url("{{ site.baseurl }}fonts/SourceCodePro-Medium.eot?#iefix") format("embedded-opentype"), url("{{ site.baseurl }}fonts/SourceCodePro-Medium.woff") format("woff"), url("{{ site.baseurl }}fonts/SourceCodePro-Medium.ttf") format("truetype"), url("{{ site.baseurl }}fonts/SourceCodePro-Medium.svg#svgSourceCodePro-Medium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -410,7 +410,7 @@ p, ul, ol {
   margin-bottom: 1.618em; }
 
 a {
-  color: #e74c3c; }
+  color: #2ecc71; }
 
 .wrapper {
   box-sizing: border-box;

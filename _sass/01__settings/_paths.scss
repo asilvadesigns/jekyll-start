@@ -1,12 +1,11 @@
 //
 //  Config
-$remote:                 "/jekyll-start/";  //  repo or site name. If using jekyll, baseurl.
+$jekyll:                 "{{ site.baseurl }}";
 $local:                  "/";
 //
 //  Base
-$root:                   $remote;
+$root:                   $jekyll;
 //
 //  Paths
 $global__font-path:      $root + "fonts/";
 $global__image-path:     $root + "images/";
-
