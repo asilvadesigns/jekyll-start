@@ -1,16 +1,14 @@
 //
 //  Units
-$nav__x: rhythm(1);
+$nav__x: rhythm(0.5);
 $nav__y: rhythm(0.5);
 //
 //  Base
 .nav {
     font-family: 'WorkSans', sans-serif;
 
-    margin-bottom: $nav__y * 6;
-}
+    margin: 0 negative($nav__x);
 
-.nav__group {
     @include clearfix;
 }
 
@@ -19,9 +17,10 @@ $nav__y: rhythm(0.5);
 }
 
 .nav__item {
-    display: inline-block;
+    display: block;
+    float: left;
 
-    padding: $nav__y 0;
+    padding: $nav__y $nav__x;
 }
 
 .nav__item--active {

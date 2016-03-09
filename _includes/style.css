@@ -371,7 +371,7 @@ a {
   font-style: normal; }
 
 html {
-  font-size: 125%; }
+  font-size: 112.5%; }
 
 body {
   color: #34495e;
@@ -385,7 +385,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'WorkSans', sans-serif;
+  font-weight: 900;
   font-size: 1.333em; }
 
 .h1 {
@@ -412,27 +412,33 @@ p, ul, ol {
 a {
   color: #2ecc71; }
 
+.footer--site {
+  margin-top: 3.236em; }
+
 .wrapper {
   box-sizing: border-box;
   max-width: 38em;
   margin: 0 auto;
   padding: 0 1.618em; }
 
+.header--site {
+  margin-bottom: 3.236em; }
+
 .nav {
   font-family: 'WorkSans', sans-serif;
-  margin-bottom: 4.854em; }
-
-.nav__group:after {
-  display: table;
-  clear: both;
-  content: ''; }
+  margin: 0 -0.809em; }
+  .nav:after {
+    display: table;
+    clear: both;
+    content: ''; }
 
 .nav__group--right {
   float: right; }
 
 .nav__item {
-  display: inline-block;
-  padding: 0.809em 0; }
+  display: block;
+  float: left;
+  padding: 0.809em 0.809em; }
 
 .nav__item--active {
   opacity: 0.5; }

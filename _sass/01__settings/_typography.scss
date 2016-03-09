@@ -1,6 +1,6 @@
 //
 //  Typography
-$global__font-size:      20;
+$global__font-size:      18;
 $global__font-ratio:     1.333;
 $global__font-unit:      1em;
 $global__line-height:    1.618;
@@ -37,6 +37,30 @@ $mono: (
         ),
     )
 );
+
+//  $serif: (
+//      "Charter": (
+//          (
+//              "name": "charter_bold-webfont",
+//              "formats": ("eot", "woff", "ttf"),
+//              "weight": "700"
+//          ), (
+//              "name": "charter_bold_italic-webfont",
+//              "formats": ("eot", "woff", "ttf"),
+//              "weight": "700",
+//              "style": "italic"
+//          ), (
+//              "name": "charter_regular-webfont",
+//              "formats": ("eot", "woff", "ttf"),
+//              "weight": "400"
+//          ), (
+//              "name": "charter_italic-webfont",
+//              "formats": ("eot", "woff", "ttf"),
+//              "weight": "400",
+//              "style": "italic"
+//          ),
+//      )
+//  );
 
 $serif: (
     "Merriweather": (
