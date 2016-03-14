@@ -1,11 +1,11 @@
 //
 //  Config
-$jekyll:                 "{{ site.baseurl }}";
-$local:                  "/";
+$jekyll:                "{{ site.baseurl }}";
+$local:                 "/";
 //
 //  Base
-$root:                   $jekyll;
+$global__root:          $jekyll;
 //
 //  Paths
-$global__font-path:      $root + "/fonts/";
-$global__image-path:     $root + "/images/";
+$global__font-path:     $global__root + "/fonts/";
+$global__image-path:    $global__root + "/images/";

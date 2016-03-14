@@ -11,7 +11,8 @@ var gulp         = require('gulp'),
     cssnano      = require('gulp-cssnano'),
     childProcess = require('child_process'),
     plumber      = require('gulp-plumber'),
-    sass         = require('gulp-sass');
+    sass         = require('gulp-sass'),
+    sassdoc      = require('sassdoc');
 
 //
 //  Messages
@@ -43,7 +44,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 //
-//  SASS Compile
+//  Sass Compile
 gulp.task('sass', function() {
     gulp.src('./_sass/**/*.scss')
         .pipe(plumber())
@@ -52,11 +53,22 @@ gulp.task('sass', function() {
             browsers:  ['last 2 versions'],
             cascade:   false
         }))
-        //  .pipe(cssnano())
+        .pipe(cssnano({
+            discardComments: { removeAll: true }
+        }))
         .pipe(gulp.dest('./_includes'))
         .pipe(browserSync.reload({
             stream: true
         }));
+});
+
+//
+//  Sass Docs
+gulp.task('sassdoc', function() {
+    gulp.src('./_sass/**/*.scss')
+        .pipe(sassdoc({
+            dest: './_docs',
+        }))
 });
 
 //
@@ -73,9 +85,12 @@ gulp.task('watch', function () {
             './_projects/*'
         ], [
             'jekyll-rebuild'
-        ]
-    );
+        ]);
 });
+
+//
+//  Production
+gulp.task('production', ['sass', 'sassdoc', 'jekyll-build']);
 
 //
 //  Default

@@ -1,11 +1,12 @@
 //
 //  Var
-$highlight__x: rhythm(0.5);
-$highlight__y: rhythm(1);
+$highlight__x: 0.5;
+$highlighty: rhythm(1);
+
 //
 //  Syntax highlighting styles
 .highlight {
-    font-family: 'SourceCodePro', monospace;
+    font-family: "SourceCodePro", monospace;
     font-weight: 500;
 
     padding: $highlight__x;

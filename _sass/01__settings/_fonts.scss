@@ -1,19 +1,5 @@
 //
-//  Typography
-$global__font-size:      18;
-$global__font-ratio:     1.333;
-$global__font-unit:      1em;
-$global__line-height:    1.618;
-//
-//  Rhythm
-$h5__font-size:         $global__font-unit;
-$h6__font-size:         $h5__font-size / $global__font-ratio;
-$h4__font-size:         $h5__font-size * $global__font-ratio;
-$h3__font-size:         $h4__font-size * $global__font-ratio;
-$h2__font-size:         $h3__font-size * $global__font-ratio;
-$h1__font-size:         $h2__font-size * $global__font-ratio;
-//
-//  Fonts
+//  Icon Font
 $icon: (
     "outlined-iconset": (
         (
@@ -23,7 +9,8 @@ $icon: (
         ),
     )
 );
-
+//
+//  Monospaced Font
 $mono: (
     "SourceCodePro": (
         (
@@ -37,31 +24,8 @@ $mono: (
         ),
     )
 );
-
-//  $serif: (
-//      "Charter": (
-//          (
-//              "name": "charter_bold-webfont",
-//              "formats": ("eot", "woff", "ttf"),
-//              "weight": "700"
-//          ), (
-//              "name": "charter_bold_italic-webfont",
-//              "formats": ("eot", "woff", "ttf"),
-//              "weight": "700",
-//              "style": "italic"
-//          ), (
-//              "name": "charter_regular-webfont",
-//              "formats": ("eot", "woff", "ttf"),
-//              "weight": "400"
-//          ), (
-//              "name": "charter_italic-webfont",
-//              "formats": ("eot", "woff", "ttf"),
-//              "weight": "400",
-//              "style": "italic"
-//          ),
-//      )
-//  );
-
+//
+//  Serif Font
 $serif: (
     "Merriweather": (
         (
@@ -103,7 +67,8 @@ $serif: (
         ),
     )
 );
-
+//
+//  Sans Font
 $sans: (
     "WorkSans": (
         (
@@ -145,15 +110,3 @@ $sans: (
         ),
     )
 );
-//
-//  Ratios based on classical scale
-//
-//  1.067      Minor Second
-//  1.125      Major Second
-//  1.200      Minor Third
-//  1.250      Major Third
-//  1.333      Perfect Fourth
-//  1.414      Augmented Fourth
-//  1.500      Perfect Fifth
-//  1.618      Golden Ratio
-

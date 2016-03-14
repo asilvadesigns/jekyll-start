@@ -27,6 +27,9 @@
             "$variable"
         ],
         [
+            "$include"
+        ],
+        [
             "font",
             "font-family",
             "font-size",
@@ -323,9 +326,6 @@
             "filter:progid:DXImageTransform.Microsoft.gradient",
             "-ms-filter:\\'progid:DXImageTransform.Microsoft.gradient",
             "text-shadow"
-        ],
-        [
-            "$include"
         ]
     ]
 }

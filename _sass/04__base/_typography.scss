@@ -1,7 +1,15 @@
 //
 //  Var
-$body__color:  $neutral__color;
-$link__color:  $primary__color;
+$body__color: $neutral__color;
+$link__color: $primary__color;
+//
+//  Headings
+$h5__font-size: $global__unit;
+$h6__font-size: $h5__font-size / $global__font-ratio;
+$h4__font-size: $h5__font-size * $global__font-ratio;
+$h3__font-size: $h4__font-size * $global__font-ratio;
+$h2__font-size: $h3__font-size * $global__font-ratio;
+$h1__font-size: $h2__font-size * $global__font-ratio;
 //
 //  Fonts
 @include ff-batch($sans);
@@ -10,44 +18,57 @@ $link__color:  $primary__color;
 //
 //  Base
 html {
-    font-size: ( $global__font-size / 16 ) * 100%;
+    font-size: normalize__font-size($global__font-size);
 }
+
 body {
-    color: $body__color;
     font-family: 'Merriweather', serif;
     font-weight: 500;
     line-height: $global__line-height;
+
+    color: $body__color;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: 900;
     font-size: $h4__font-size;
+    font-weight: 900;
 }
+
 .h1 {
     font-size: $h1__font-size;
 }
+
 .h2 {
     font-size: $h2__font-size;
 }
+
 .h3 {
     font-size: $h3__font-size;
 }
+
 .h4 {
     font-size: $h4__font-size;
 }
+
 .h5 {
     font-size: $h5__font-size;
 }
+
 .h6 {
     font-size: $h6__font-size;
 }
-p, ul, ol {
+
+p,
+ul,
+ol {
     margin-bottom: rhythm(1);
 }
+
 a {
     color: $link__color;
 }

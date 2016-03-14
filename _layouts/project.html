@@ -7,4 +7,13 @@ layout: default
         Check it out
     </a>
 </header>
+
 {{ content }}
+
+{% if page.next and page.next.categories contains "portfolio" %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}">Next Post</a>
+    <span>{{ page.next.project-title }}</span>
+{% else if page.previous and page.previous.categories contains "portfolio" %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}">Previous Post</a>
+    <span>{{ page.previous.project-title }}</span>
+{% endif %}

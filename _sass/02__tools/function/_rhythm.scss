@@ -1,18 +1,24 @@
 @function rhythm($input) {
-    $rhythm: $input * $global__line-height * $global__font-unit;
+    $input: strip-unit($input);
+    $rhythm: $input * $global__line-height * $global__unit;
     @return $rhythm;
 }
 
-@function rhythm-rem($input) {
-    $rhythm-rem: $input * $global__line-height * 1rem;
-    @return $rhythm-rem;
+@function normalize-font-size($input) {
+    $input: strip-unit($input);
+    $output: ($input / 16) * 100%;
+    @return $output;
 }
 
-@mixin rhythm-rem($property, $input) {
-    //  $rhythm-rem-px:  $input * $global__line-height * ($raw__font-size * 1px);
-    $rhythm-rem:     $input * $global__line-height * 1rem;
-
-    //  #{$property}: $rhythm-rem-px;
-    #{$property}: $rhythm-rem;
-}
-
+//  @function rhythm-rem($input) {
+//      $rhythm-rem: $input * $global-line-height * 1rem;
+//      @return $rhythm-rem;
+//  }
+//
+//  @mixin rhythm-rem($property, $input) {
+//      //  $rhythm-rem-px:  $input * $global-line-height * ($raw__font-size * 1px);
+//      $rhythm-rem: $input * $global-line-height * 1rem;
+//
+//      //  #{$property}: $rhythm-rem-px;
+//      #{$property}: $rhythm-rem;
+//  }

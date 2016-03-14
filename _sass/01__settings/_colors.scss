@@ -1,6 +1,18 @@
 //
+//  Grayscale
+$white:   #fff;
+$black:   #000;
+$gray__01:  mix($black, $white, 10%);
+$gray__02:  mix($black, $white, 20%);
+$gray__03:  mix($black, $white, 30%);
+$gray__04:  mix($black, $white, 40%);
+$gray__05:  mix($black, $white, 50%);
+$gray__06:  mix($black, $white, 60%);
+$gray__07:  mix($black, $white, 70%);
+$gray__08:  mix($black, $white, 80%);
+$gray__09:  mix($black, $white, 90%);
+//
 //  Abstract Palette
-//  http://flatuicolors.com/
 $f-teal:            #1abc9c;
 $f-green:           #2ecc71;
 $f-peter:           #3498db;
@@ -13,21 +25,21 @@ $f-lightgrey:       #ecf0f1;
 $f-grey:            #95a5a6;
 //
 //  Default Palette
-$primary__color:  $f-green;
-$neutral__color:  $f-darkgrey;
+$primary__color:         $f-green;
+$neutral__color:         $f-darkgrey;
+$neutral__color--light:  $f-grey;
 //
 //  Syntax Palette
-//  Tomorrow Night Eighties
 $s-background:      #2d2d2d;
 $s-currentline:     #393939;
 $s-selection:       #515151;
-$s-foreground:      #cccccc;
-$s-comment:         #999999;
+$s-foreground:      #ccc;
+$s-comment:         #999;
 $s-red:             #f2777a;
 $s-orange:          #f99157;
-$s-yellow:          #ffcc66;
-$s-green:           #99cc99;
-$s-aqua:            #66cccc;
-$s-light-blue:      #99cccc;
-$s-blue:            #6699cc;
-$s-purple:          #cc99cc;
+$s-yellow:          #fc6;
+$s-green:           #9c9;
+$s-aqua:            #6cc;
+$s-light-blue:      #9cc;
+$s-blue:            #69c;
+$s-purple:          #c9c;

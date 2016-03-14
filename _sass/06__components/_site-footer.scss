@@ -1,0 +1,9 @@
+//
+//  Units
+$site-footer__x: $global__x;
+$site-footer__y: $global__y;
+//
+//  Base
+.site-footer {
+    margin-top: $site-footer__y * 2;
+}

@@ -1,0 +1,9 @@
+@mixin row($input) {
+    margin-right: $input * -1;
+    margin-left: $input * -1;
+}
+
+@mixin column($input) {
+    padding-right: $input;
+    padding-left: $input;
+}

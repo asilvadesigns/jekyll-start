@@ -1,7 +1,10 @@
+//
+//  Units
+$footer__x: $global__x;
+$footer__y: rhythm($global__y);
+//
+//  Base
 .footer {
-
-}
-
-.footer--site {
-    margin-top: rhythm(2);
+    padding-top: $footer__y;
+    padding-bottom: $footer__y;
 }

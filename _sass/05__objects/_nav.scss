@@ -1,26 +1,29 @@
 //
 //  Units
-$nav__x: rhythm(0.5);
-$nav__y: rhythm(0.5);
+$nav__x: $global__x;
+$nav__y: rhythm($global__y / 2);
 //
 //  Base
 .nav {
-    font-family: 'WorkSans', sans-serif;
-
-    margin: 0 negative($nav__x);
-
     @include clearfix;
 }
 
-.nav__group--right {
-    float: right;
+.nav--navbar {
+    .nav__item {
+        display: block;
+        float: left;
+    }
+}
+
+.nav__group {
+    @include row($nav__x);
 }
 
 .nav__item {
-    display: block;
-    float: left;
+    @include column($nav__x);
 
-    padding: $nav__y $nav__x;
+    padding-top: $nav__y;
+    padding-bottom: $nav__y;
 }
 
 .nav__item--active {

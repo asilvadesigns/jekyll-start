@@ -1,13 +1,19 @@
-<header class="header header--site">
+<header class="header site-header">
 
-    <nav class="nav">
+    <nav class="nav nav--navbar site-nav">
 
-        <a class="nav__item" href="{{ site.baseurl }}/">Logo</a>
+        <div class="wrapper">
 
-        <div class="nav__group nav__group--right">
-            {% assign pagelist = site.pages %}
-            {% assign navgroup = 'main' %}
-            {% include nav.html %}
+            <div class="nav__group float--left">
+                <a class="nav__item" href="{{ site.baseurl }}/">Logo</a>
+            </div>
+
+            <div class="nav__group float--right">
+                {% assign pagelist = site.pages | sort: 'navorder' %}
+                {% assign navgroup = 'main' %}
+                {% include nav.html %}
+            </div>
+
         </div>
 
     </nav>

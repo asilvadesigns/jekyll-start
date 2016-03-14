@@ -1,0 +1,18 @@
+//
+//  Units
+$site-nav__x: $global__x;
+$site-nav__y: $global__y;
+$site-nav__bg: $primary__color;
+$site-nav__color: $white;
+//
+//  Base
+.site-nav {
+    font-family: 'WorkSans', sans-serif;
+
+    color: $site-nav__color;
+    background-color: $site-nav__bg;
+
+    a {
+        color: inherit;
+    }
+}

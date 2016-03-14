@@ -77,10 +77,10 @@ $ff-map: () !default;
 /// @param {String | Number} $weight [normal] - Weight of the font to import
 /// @param {String | Number} $style [normal] - Style of the font to import
 /// @group fonts
-@mixin ff-single($fontName, $src, $weight: normal, $style: normal) {
+@mixin ff-single($fontname, $src, $weight: normal, $style: normal) {
     @at-root {
         @font-face {
-            font-family: quote($fontName);
+            font-family: quote($fontname);
             src: $src;
             font-weight: unquote($weight);
             font-style: unquote($style);

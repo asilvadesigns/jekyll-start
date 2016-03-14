@@ -1,8 +1,9 @@
 ---
-layout: page
-title: About
-permalink: /about/
-navgroup: "main"
+layout:     page
+title:      About
+permalink:  /about/
+navgroup:   "main"
+navorder:   2
 ---
 
 This is the base Jekyll theme that I've modified. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
