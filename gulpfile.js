@@ -1,87 +1,72 @@
-//
-//  Helpful Resources:
-//  https://github.com/shakyShane/jekyll-gulp-sass-browser-sync
-//  http://blog.webbb.be/use-jekyll-with-gulp/
-//
-//
-//  Required Plugins
-var gulp         = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
-    browserSync  = require('browser-sync'),
-    cssnano      = require('gulp-cssnano'),
-    childProcess = require('child_process'),
-    plumber      = require('gulp-plumber'),
-    sass         = require('gulp-sass'),
-    sassdoc      = require('sassdoc');
+var gulp        = require("gulp");
+var browserSync = require("browser-sync");
+var cp          = require("child_process");
+var sass		= require("gulp-sass");
 
-//
-//  Messages
-var messages     = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
+var paths = {
+	css: {
+		src: "./app/assets/_src/css/**/*.scss",
+		dist: "./app/assets/css/",
+		jekyllSrv: "./_site/css/"
+	},
+	html: {
+		src: "./app/assets/**/*.html"
+	},
+	jekyll: {
+		src: "./_site/"
+	},
+	js: {
+		src: "./app/assets/_src/js/**/*.js",
+		dist: "./app/assets/js/",
+		jekyllSrv: "./_site/js/"
+	},
+	md: {
+		src: "./app/assets/**/*.md"
+	}
+}
 
-//
-//  Jekyll Build
-gulp.task('jekyll-build', function(done) {
-    browserSync.notify(messages.jekyllBuild);
-    return childProcess.spawn('jekyll.bat', ['build', '--profile'], {stdio: 'inherit'})
-        .on('close', done);
-});
+gulp.task(jekyllBuild);
+gulp.task(jekyllServe);
+gulp.task(css);
+gulp.task(js);
+gulp.task(reload);
+gulp.task(watch);
+gulp.task("default",
+	gulp.series(jekyllBuild, css, js, gulp.parallel(jekyllServe, watch))
+)
 
-//
-//  Jekyll Rebuild
-gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
-    browserSync.reload();
-});
+function jekyllBuild(done) {
+	return cp.spawn("jekyll.bat", ["build"], {stdio: "inherit"}).on("close", done);
+}
 
-//
-//  Jekyll Serve
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-    browserSync.init({
-        server: '_site',
-        notify: true
-    });
-});
+function jekyllServe() {
+	browserSync.init({
+		server: paths.jekyll.src
+	});
+}
 
-//
-//  Sass Compile
-gulp.task('sass', function() {
-    gulp.src('./_sass/**/*.scss')
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(autoprefixer({
-            browsers:  ['last 2 versions'],
-            cascade:   false
-        }))
-        .pipe(cssnano({
-            discardComments: { removeAll: true }
-        }))
-        .pipe(gulp.dest('./_includes'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-});
+function css() {
+	return gulp.src(paths.css.src)
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest(paths.css.jekyllSrv))
+		.pipe(gulp.dest(paths.css.dist))
+        .pipe(browserSync.stream());
+}
 
-//
-//  Sass Docs
-gulp.task('sassdoc', function() {
-    gulp.src('./_sass/**/*.scss')
-        .pipe(sassdoc({
-            dest: './_docs',
-        }))
-});
+function js() {
+	return gulp.src(paths.js.src)
+		.pipe(gulp.dest(paths.js.jekyllSrv))
+		.pipe(gulp.dest(paths.js.dist))
+        .pipe(browserSync.stream());
+}
 
-//
-//  Watch
-gulp.task('watch', function () {
-    gulp.watch('./_sass/**/*.scss', ['sass']);
-    gulp.watch(['./_includes/*', './_layouts/*', './_pages/*', './_posts/*', './_projects/*'], ['jekyll-rebuild']);
-});
+function reload() {
+	browserSync.reload();
+}
 
-//
-//  Production
-gulp.task('production', ['sass', 'sassdoc', 'jekyll-build']);
-
-//
-//  Default
-gulp.task('default', ['browser-sync', 'watch']);
+function watch() {
+	gulp.watch(paths.html.src).on("change", gulp.series(jekyllBuild, reload));
+	gulp.watch(paths.md.src).on("change", gulp.series(jekyllBuild, reload));
+	gulp.watch(paths.css.src).on("change", css);
+	gulp.watch(paths.js.src).on("change", js);
+}

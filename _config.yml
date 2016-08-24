@@ -1,54 +1,26 @@
 #
-#   General Site Settigns
-#
-author: Author
-title: Your awesome title
-email: author@dealeron.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+#   General
+author: Alberto Silva
+title: Jekyll Boilerplate
+email: asilvadesigns@gmail.com
 
 #
-#   General Build Settings
-#
-#   Url
-baseurl: "/jekyll-start"            # remote
-#baseurl: ""                 # local
-url: ""                     # the base hostname & protocol for your site
+#   Build
+baseurl: ""
+source: "./app/"
 permalink: pretty
 
-#   Require gems
-#   gems:
-#       - jekyll-paginate
-
-#   Include files/folders
-include:
-    - _pages
-
-#   Exclude files/folders
+#
+#   Excludes
 exclude:
     - LICENSE
     - README.md
-    - gulpfile.js
     - node_modules
+    - gulpfile.js
+    - Gemfile
     - package.json
 
-#   Set collection(s) output
-collections:
-    pages:
-        output: true
-    projects:
-        output: true
-
-#   Set collection(s) layout
-defaults:
-    - scope:
-        type: pages
-      values:
-        layout: page
-
-    - scope:
-        type: projects
-      values:
-        layout: project
+#
+#   Includes
+include:
+    - assets
